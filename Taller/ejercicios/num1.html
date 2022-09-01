@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Taller 1</title>
-        <link rel="stylesheet" media="all" href="../css/style.css" />
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-      </head>
-      <body>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taller 1</title>
+    <link rel="stylesheet" media="all" href="../css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../js/num1.js"></script>
+  </head>
+  <body>
       <h1>Taller N° 1</h1>
       <h2>Resolución de problemas y manipulación del DOM con JavaScript</h2>
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-      
+     
       <nav class="menu">
         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
         <label class="menu-open-button" for="menu-open">
@@ -24,7 +23,7 @@
         <a href="#" class="menu-item"> <i class='bx bx-sort-z-a'></i><!--palabra--> </a>
         <a href="#" class="menu-item"> <i class='bx bxs-group'></i> <!--grupo--> </a>
         <a href="#" class="menu-item"> <i class='bx bx-shape-triangle'></i><!--Trinagulo--> </a>
-        <a href="#" class="menu-item"> <i class='bx bx-math'></i><!--calculadora--> </a>
+        <a href="./num2.html" class="menu-item"> <i class='bx bx-math'></i><!--calculadora--> </a>
         <a href="#" class="menu-item"> <i class='bx bxs-thermometer'></i><!--temp--> </a>
         <a href="#" class="menu-item"> <i class='bx bx-blanket'></i> <!--for--></a>
         
@@ -54,11 +53,11 @@
 
       <!-------------------------------------Formulario--------------------------->
       <div class="nom-form">
-        <input class="nom" type="text" placeholder="Nombre">
-        <button class="item" type="submit" onclick="">Longitud</button>
-        <button class="item" type="submit" onclick="">Mayúscula</button>
-        <button class="item" type="submit" onclick="">Minuscula</button>
-        <button class="item" type="submit" onclick="">Caracter N° 1</button>
+        <input class="nom" id="nom" type="text" placeholder="Nombre">
+        <button class="item" type="submit" onclick="longitud();">Longitud</button>
+        <button class="item" type="submit" onclick="mayuscula();">Mayúscula</button>
+        <button class="item" type="submit" onclick="minuscula();">Minuscula</button>
+        <button class="item" type="submit" onclick="caracter();">Caracter N°1</button>
       </div>
-      </body>
-      </html>
+  </body>
+</html>

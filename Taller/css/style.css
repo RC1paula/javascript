@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     color: rgb(206, 72, 72);
     text-align: center;
+    padding-bottom: 30px;
   }
   
   a {
@@ -255,3 +256,69 @@ body {
     padding: 5%;
     font-size: 20px;
   }
+
+  /*-----------------------------------------------------------------
+  *                                                                  *
+  *                      Calcularoda                                 *
+  *                                                                  *
+  -------------------------------------------------------------------*/
+
+  #calculadora{
+    max-width: 350px;
+    margin: 0 auto;
+    border: 2px solid rgb(128, 7, 7);
+    border-radius: 5px;
+  }
+
+  #calculadora input {
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    width: 88%;
+    border-bottom: 2px solid rgb(128, 7, 7);
+    padding: 20px;
+    text-align: right;
+    font-size: 40px;
+  }
+
+  .botons{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    grid-gap: 15px;
+  }
+
+  .digito{
+    background: rgba(0, 0, 0, 0.537);
+    border: none;
+    padding: 2px;
+    color: #eee;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color .5s;
+  }
+
+  .ac, 
+  .cero{
+    grid-column: span 3;
+  }
+
+  .ac{
+    background: #9c0a0a;
+  }
+
+  .equals{
+    background-color: #e91e1e;
+  }
+
+  .digito:hover{
+    background: #f7f4f4a4;
+    color: #000;
+  }
+
+  
+
+
