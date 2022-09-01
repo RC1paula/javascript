@@ -1,5 +1,6 @@
 let cliclear=function(x){
-    document.getElementById('number').innerHTML +=x;
+    document.getElementById('number').innerHTML+=x;
+    console.log(x)
 }
 
 function depurar(){
@@ -9,6 +10,7 @@ function depurar(){
 function calcular(){
     var result=eval(document.getElementById('number').innerHTML);
     document.getElementById('number').innerHTML = result;
+    console.log(result)
 }
 
 var uno=document.getElementById('uno');
@@ -29,52 +31,83 @@ var mas=document.getElementById('mas');
 var igual=document.getElementById('igual');
 var ac=document.getElementById('ac');
 
-uno.addEventListener('click', function(){
-    cliclear(1);
+uno.addEventListener('click', 
+function(){
+    cliclear('1');
 })
-dos.addEventListener('click', function(){
+
+dos.addEventListener('click', 
+function(){
     cliclear(2);
 })
-tres.addEventListener('click', function(){
+
+tres.addEventListener('click', 
+function(){
     cliclear(3);
 })
-cuatro.addEventListener('click', function(){
+
+cuatro.addEventListener('click', 
+function(){
     cliclear(4);
 })
-cinco.addEventListener('click', function(){
+
+cinco.addEventListener('click', 
+function(){
     cliclear(5);
 })
-seis.addEventListener('click', function(){
+
+seis.addEventListener('click', 
+function(){
     cliclear(6);
 })
-siete.addEventListener('click', function(){
+
+siete.addEventListener('click', 
+function(){
     cliclear(7);
 })
-ocho.addEventListener('click', function(){
+
+ocho.addEventListener('click', 
+function(){
     cliclear(8);
 })
-nueve.addEventListener('click', function(){
+
+nueve.addEventListener('click', 
+function(){
     cliclear(9);
 })
-cero.addEventListener('click', function(){
+
+cero.addEventListener('click', 
+function(){
     cliclear(0);
 })
-mas.addEventListener('click', function(){
+
+mas.addEventListener('click', 
+function(){
     cliclear("+");
 })
-menos.addEventListener('click', function(){
+
+menos.addEventListener('click', 
+function(){
     cliclear("-");
 })
-multi.addEventListener('click', function(){
+
+multi.addEventListener('click', 
+function(){
     cliclear("*");
 })
-divi.addEventListener('click', function(){
+
+divi.addEventListener('click', 
+function(){
     cliclear("/");
 })
-ac.addEventListener('click', function(){
+
+ac.addEventListener('click', 
+function(){
     depurar();
 })
-igual.addEventListener('click', function(){
+
+igual.addEventListener('click', 
+function(){
     calcular();
 })
 
