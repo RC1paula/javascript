@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipo de Triangulo</title>
+    <title>Document</title>
     <link rel="stylesheet" media="all" href="../css/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../js/num4.js"></script>
+    <script src="../js/num5.js"></script>
 </head>
 <body>
     <a  href="../index.html"><h1>Taller N° 1</h1></a>
@@ -22,7 +22,7 @@
       </label>
       
       <a href="./num1.html" class="menu-item"> <i class='bx bx-sort-z-a'></i><!--palabra--> </a>
-      <a href="./num5.html" class="menu-item"> <i class='bx bxs-group'></i> <!--grupo--> </a>
+      <a href="#" class="menu-item"> <i class='bx bxs-group'></i> <!--grupo--> </a>
       <a href="#" class="menu-item"> <i class='bx bx-shape-triangle'></i><!--Trinagulo--> </a>
       <a href="#" class="menu-item"> <i class='bx bx-shape-square'></i><!--Fuguras geo--> </a>
       <a href="./num3.html" class="menu-item"> <i class='bx bxs-thermometer'></i><!--temp--> </a>
@@ -52,22 +52,50 @@
         </defs>
     </svg>
 
-    <!---------------------------------------Triangulos--------------------------------------->
-    <div class="triangulo">
-        <form>
-            <label>Valor del lado N° 1 </label>
-            <input class="valor" id="valor1" name="valor1">
+    <!----------------------Instructores------------------------->
+    <div class="Instructores">
+      <label for="">Nombre Instructor</label>
+      <select name="nombre" id="nombre">
+        <option value=""></option>
+        <option value="tatiana">Tatiana</option>
+        <option value="carolina">Carolina</option>
+        <option value="adriana">Adriana</option>
+        <option value="yaneth">Yaneth</option>
+        <option value="jhonathan">Jhonathan</option>
+        <option value="luis">Luis</option>
+        <option value="fernando">Fernando</option>
+      </select>
 
-            <label>Valor del lado N°2  </label>
-            <input class="valor" id="valor2" name="valor2">
+      <label for="">Apellido Instructor</label>
+      <select name="apellido" id="apellido">
+        <option value=""></option>
+        <option value="cabrera">Cabrera</option>
+        <option value="forero">Forero</option>
+        <option value="duarte">Duarte</option>
+        <option value="castillo">Castillo</option>
+        <option value="espitia">Espitia</option>
+        <option value="baquero">Baqueros</option>
+        <option value="galindo">Galindo</option>
+      </select>
 
-            <label>Valor del lado N°3  </label>
-            <input class="valor" id="valor3" name="valor3">
+      <label for="">Clase</label>
+      <select name="clase" id="clase">
+        <option value=""></option>
+        <option value="calidad">Calidad</option>
+        <option value="proyecto">Proyecto</option>
+        <option value="font-end">Front-End</option>
+        <option value="diseño">Diseño</option>
+        <option value="gestion">Gestion Ambiental</option>
+        <option value="php">PHP Avanzado</option>
+        <option value="cultura">Cultura Física</option>
+        <option value="bd">Base de Datos</option>
+        <option></option>
+      </select>
 
-            <button id="triangulo" onclick="triangulo();" > Triangulo </button>
-        </form>
+      <butt class="revisar" id="revisar">Revisar</butt>
     </div>
 
-    <script src="../js/num4.js"></script>
+    <script src="../js/num5.js"></script>
+
 </body>
 </html>
