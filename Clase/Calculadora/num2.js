@@ -6,7 +6,7 @@ let cliclear=function(x){
 function depurar(){
     document.getElementById('number').innerHTML ="";
 }
-
+ 
 function calcular(){
     var result=eval(document.getElementById('number').innerHTML);
     document.getElementById('number').innerHTML = result;
