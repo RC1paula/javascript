@@ -1,4 +1,4 @@
-resultado=function(){
+triangulo=function(){
     
 
 var valor1 =document.getElementById('valor1').value;
