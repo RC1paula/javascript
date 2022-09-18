@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasar grados</title>
     <link rel="stylesheet" media="all" href="../css/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>Calculadora</title>
+    <script src="../js/num1.js"></script>
 </head>
 <body>
     <a  href="../index.html"><h1>Taller N° 1</h1></a>
@@ -26,6 +27,7 @@
       <a href="./num2.html" class="menu-item"> <i class='bx bx-math'></i><!--calculadora--> </a>
       <a href="./num3.html" class="menu-item"> <i class='bx bxs-thermometer'></i><!--temp--> </a>
       <a href="#" class="menu-item"> <i class='bx bx-blanket'></i> <!--for--></a>
+      
     </nav>
     
     
@@ -50,35 +52,30 @@
         </defs>
     </svg>
 
-    <!---------------------------------- CALCULADORA ------------------------------------>
-    <div id="calculadora">
+    <!----------------------------------Temperatura-------------------------------->
+    <div id="temp" class="temp">
+        <input class="ingrese-temperatura" id="ingrese-temperatura" placeholder="Ingrese la Temperatura">
+        
+        <div id="de" class="de">
+            <label class="text-convertir">Vas a convertir de</label>
+            <br>
+            <select class="convertir-de" id="convertir-de">
+                <option value="kelvin">Kelvin</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+            </select>
+        </div>
 
-        <h1 id="number"></h1>
-
-      <div class="botons">
-        <button class="digito ac" id="ac" type="button" value="ac">AC</button>
-        <button class="digito" id="divi" type="button" value="/">&divide;</button>
-
-        <button class="digito" id="uno" type="button" value="1">1</button>
-        <button class="digito" id="dos" type="button" value="2">2</button>
-        <button class="digito" id="tres" type="button" value="3">3</button>
-        <button class="digito" id="multi" type="button" value="*">&times;</button>
-
-        <button class="digito" id="cuatro" type="button" value="4">4</button>
-        <button class="digito" id="cinco" type="button" value="5">5</button>
-        <button class="digito" id="seis" type="button" value="6">6</button>
-        <button class="digito" id="menos" type="button" value="-">&minus;</button>
-
-        <button class="digito" id="siete" type="button" value="7">7</button>
-        <button class="digito" id="ocho" type="button" value="8">8</button>
-        <button class="digito" id="nueve" type="button" value="9">9</button>
-        <button class="digito" id="mas" type="button" value="+">&plus;</button>
-
-
-        <button class="digito cero" id="cero" type="button" value="0">0</button>
-        <button class="digito equals" id="igual" type="button" value="igual">&equals;</button>
-      </div>
+        <div id="para" class="para">
+            <label class="text-convertir">Para convertir en </label>
+            <br>
+            <select class="para-convertir" id="para-convertir">
+                <option value="kelvin">Kelvin</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+            </select>
+       
+        </div>
     </div>
-    <script src="../js/num2.js"></script>
 </body>
 </html>
