@@ -7,7 +7,7 @@
     <title>Pasar grados</title>
     <link rel="stylesheet" media="all" href="../css/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../js/num1.js"></script>
+    <script src="../js/num3.js"></script>
 </head>
 <body>
     <a  href="../index.html"><h1>Taller N° 1</h1></a>
@@ -54,12 +54,12 @@
 
     <!----------------------------------Temperatura-------------------------------->
     <div id="temp" class="temp">
-        <input class="ingrese-temperatura" id="ingrese-temperatura" placeholder="Ingrese la Temperatura">
+        <input type="number" class="ingrese-temperatura" id="ingrese-temperatura" placeholder="Ingrese la Temperatura">
         
         <div id="de" class="de">
             <label class="text-convertir">Vas a convertir de</label>
             <br>
-            <select class="convertir-de" id="convertir-de">
+            <select name="convertir-de" class="convertir-de" id="convertir-de">
                 <option value="kelvin">Kelvin</option>
                 <option value="fahrenheit">Fahrenheit</option>
                 <option value="celsius">Celsius</option>
@@ -69,7 +69,7 @@
         <div id="para" class="para">
             <label class="text-convertir">Para convertir en </label>
             <br>
-            <select class="para-convertir" id="para-convertir">
+            <select name="para-convertir" class="para-convertir" id="para-convertir">
                 <option value="kelvin">Kelvin</option>
                 <option value="fahrenheit">Fahrenheit</option>
                 <option value="celsius">Celsius</option>
@@ -77,5 +77,8 @@
        
         </div>
     </div>
+
+    <script src="../js/num3.js"></script>
+
 </body>
 </html>
