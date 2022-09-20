@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
-</head>
+    <link rel="stylesheet" media="all" href="../css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  </head>
 <body>
     <a  href="../index.html"><h1>Taller N° 1</h1></a>
     <h2>Resolución de problemas y manipulación del DOM con JavaScript</h2>
@@ -51,6 +53,93 @@
 
 
     <!----------------Figuras------------------->
-    
+    <div class="figuras">
+      <div class="circulo">
+        <img src="../img/circulo.png">
+        <button href="#" class="area-circulo" id="area-circulo">Área</button>
+        <button>Perímetro</button>
+      </div>
+
+      <div class="triangulo" id="">
+        <img src="../img/triangulo.png">
+        <button href="#" class="area-circulo" id="area-triangulo">Área</button>
+        <button>Perímetro</button>
+      </div>
+
+      <div class="cuadrado" id="">
+        <img src="../img/cuadrado.png">
+        <button id="area-cuadrado">Área</button>
+        <button>Perímetro</button>
+      </div>
+
+      <div class="rectangulo" id="">
+        <img src="../img/rectangulo.png">
+        <button id="area-rectangulo">Área</button>
+        <button>Perímetro</button>
+      </div>
+    </div>
+
+    <!--Modal área circulo-->
+    <div id="circulo-modal" class="modal circulo-modal">
+      <div id="modal-circulo" class="modal-circulo modal-close">
+        <p class="close" id="close">X</p>
+        <h2>Área del Circulo</h2>                    
+        <label for="">Ingrese el radio</label>
+        <br>
+        <input class="circulo-area-input" id="circulo-area-input">
+        <br>
+        <button class="calcular-circulo-area" id="calcular-circulo-area">Calcular</button>
+      </div>
+    </div>
+
+    <!--Modal área triangulo-->
+    <div id="triangulo-modal" class="modal circulo-modal">
+      <div id="modal-triangulo" class="modal-circulo modal-close">
+        <p class="close" id="closetri">X</p>
+        <h2>Área del Triangulo</h2>                    
+        <label for="">Ingrese la Base</label>
+        <br>
+        <input class="circulo-area-input" id="triangulo-base-input">
+        <br>
+        <label for="">Ingrese la Altura</label>
+        <br>
+        <input class="circulo-area-input" id="triangulo-altura-input">
+        <br>
+        <button class="calcular-circulo-area" id="calcular-triangulo-area">Calcular</button>
+      </div>
+    </div>
+
+    <!--Modal área cuadrado-->
+    <div id="cuadrado-modal" class="modal circulo-modal">
+      <div id="modal-cuadrado" class="modal-circulo modal-close">
+        <p class="close" id="closecua">X</p>
+        <h2>Área del cuadrado</h2>                    
+        <label for="">Ingrese el lado</label>
+        <br>
+        <input class="circulo-area-input" id="cuadrado-area-input">
+        <br>
+        <button class="calcular-circulo-area" id="calcular-cuadrado-area">Calcular</button>
+      </div>
+    </div>
+
+    <!--Modal área rectangulo-->
+    <div id="rectangulo-modal" class="modal circulo-modal">
+      <div id="modal-rectangulo" class="modal-circulo modal-close">
+        <p class="close" id="closerec">X</p>
+        <h2>Área del rectangulo</h2>                    
+        <label for="">Ingrese la base</label>
+        <br>
+        <input class="circulo-area-input" id="rectangulo-base-input">
+        <br>
+        <label for="">Ingrese la altura</label>
+        <br>
+        <input class="circulo-area-input" id="rectangulo-altura-input">
+        <br>
+        <button class="calcular-circulo-area" id="calcular-rectangulo-area">Calcular</button>
+      </div>
+    </div>
+
+    <script src="../js/num6.js"></script>
+
 </body>
 </html>
