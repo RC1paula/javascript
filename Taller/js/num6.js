@@ -146,13 +146,44 @@ reccalcular.addEventListener("click", recarea);
 
 /*******************************************************************
 ********************************************************************
-***********************Figuras Geometricas**************************
+***********************     Perimetros    **************************
 ********************************************************************
-********************************************************************/
+*******************************************************************/
 
 /*-----------------------------------------------------------------*
 *                Modal rectangulo (perimetro)                      *
 *------------------------------------------------------------------*/
+const recperimetro = document.getElementById("perimetro-rectangulo");
+const recperimetroc = document.getElementById("rectangulo-perimetro");
+const reabrir = document.getElementById("area-rectangulo");
+const recerrar = document.getElementById("closerec"); 
+const recalcular = document.getElementById("calcular-rectangulo-area");
 
+let remostrar = function(a){
+    a.preventDefault();
+    recperimetroc.style.opacity = "1";
+    recperimetroc.style.visibility = "visible";
+    recperimetro.classList.toggle("modal-close");
+}
+
+reabrir.addEventListener("click", remostrar)
+
+recerrar.addEventListener("click", function(){
+    recperimetro.classList.toggle("modal-close");
+    setTimeout(function(){
+        recperimetroc.style.opacity = "0";
+        recperimetroc.style.visibility = "hidden";
+    },2000)
+})
+
+function recarea(){
+    const baserec = parseFloat(document.getElementById("rectangulo-base-input").value);
+    const alturarec = parseFloat(document.getElementById("rectangulo-altura-input").value);
+
+     calcular=baserec*alturarec;
+    alert(`El área del rectangulo es `+calcular.toFixed(2));
+}
+
+reccalcular.addEventListener("click", recarea);
 
 
