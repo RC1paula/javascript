@@ -1,207 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras Geometricas</title>
-    <link rel="stylesheet" media="all" href="../css/style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figuras Geometricas</title>
+  <link rel="stylesheet" media="all" href="../css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
 <body>
-    <a  href="../index.html"><h1>Taller N° 1</h1></a>
-    <h2>Resolución de problemas y manipulación del DOM con JavaScript</h2>
-   
-    <nav class="menu">
-      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-      <label class="menu-open-button" for="menu-open">
-        <span class="hamburger hamburger-1"></span>
-        <span class="hamburger hamburger-2"></span>
-        <span class="hamburger hamburger-3"></span>
-      </label>
-      
-      <a href="./num1.html" class="menu-item"> <i class='bx bx-sort-z-a'></i><!--palabra--> </a>
-      <a href="#" class="menu-item"> <i class='bx bxs-group'></i> <!--grupo--> </a>
-      <a href="#" class="menu-item"> <i class='bx bx-shape-triangle'></i><!--Trinagulo--> </a>
-      <a href="#" class="menu-item"> <i class='bx bx-shape-square'></i><!--Fuguras geo--> </a>
-      <a href="./num3.html" class="menu-item"> <i class='bx bxs-thermometer'></i><!--temp--> </a>
-      <a href="#" class="menu-item"> <i class='bx bx-blanket'></i> <!--for--></a>
-      
-    </nav>
-    
-    
-    <!-- filters -->
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="shadowed-goo">
-              
-              <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-              <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-              <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-              <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-              <feComposite in2="shadow" in="goo" result="goo" />
-              <feComposite in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-          <filter id="goo">
-              <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-              <feComposite in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-        </defs>
-    </svg>
+  <a href="../index.html">
+    <h1>Taller N° 1</h1>
+  </a>
+  <h2>Resolución de problemas y manipulación del DOM con JavaScript</h2>
+
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="./num1.html" class="menu-item"> <i class='bx bx-sort-z-a'></i>
+      <!--palabra-->
+    </a>
+    <a href="./num5.html" class="menu-item"> <i class='bx bxs-group'></i>
+      <!--grupo-->
+    </a>
+    <a href="./num4.html" class="menu-item"> <i class='bx bx-shape-triangle'></i>
+      <!--Trinagulo-->
+    </a>
+    <a href="./num6.html" class="menu-item"> <i class='bx bx-shape-square'></i>
+      <!--Fuguras geo-->
+    </a>
+    <a href="./num3.html" class="menu-item"> <i class='bx bxs-thermometer'></i>
+      <!--temp-->
+    </a>
+    <a href="./num7.html" class="menu-item"> <i class='bx bx-blanket'></i>
+      <!--for-->
+    </a>
+
+  </nav>
 
 
-    <!----------------Figuras------------------->
-    <div class="figuras">
-      <div class="circulo">
-        <img src="../img/circulo.png">
-        <button href="#" class="area-circulo" id="area-circulo">Área</button>
-        <button>Perímetro</button>
-      </div>
+  <!-- filters -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
 
-      <div class="triangulo" id="">
-        <img src="../img/triangulo.png">
-        <button href="#" class="area-circulo" id="area-triangulo">Área</button>
-        <button>Perímetro</button>
-      </div>
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+          result="shadow" />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feComposite in2="shadow" in="goo" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+  </svg>
 
-      <div class="cuadrado" id="">
-        <img src="../img/cuadrado.png">
-        <button id="area-cuadrado">Área</button>
-        <button>Perímetro</button>
-      </div>
 
-      <div class="rectangulo" id="">
-        <img src="../img/rectangulo.png">
-        <button id="area-rectangulo">Área</button>
-        <button>Perímetro</button>
-      </div>
+  <!----------------Figuras------------------->
+  <div class="figuras">
+    <div class="circulo">
+      <img src="../img/circulo.png">
+      <button href="#" class="area-circulo" id="area-circulo">Área</button>
+      <button>Perímetro</button>
     </div>
 
-    <!--Modal área circulo-->
-    <div id="circulo-modal" class="modal circulo-modal">
-      <div id="modal-circulo" class="modal-circulo modal-close">
-        <p class="close" id="close">X</p>
-        <h2>Área del Circulo</h2>                    
-        <label for="">Ingrese el radio</label>
-        <br>
-        <input class="circulo-area-input" id="circulo-area-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-circulo-area">Calcular</button>
-      </div>
+    <div class="triangulo" id="">
+      <img src="../img/triangulo.png">
+      <button href="#" class="area-circulo" id="area-triangulo">Área</button>
+      <button>Perímetro</button>
     </div>
 
-    <!--Modal área triangulo-->
-    <div id="triangulo-modal" class="modal circulo-modal">
-      <div id="modal-triangulo" class="modal-circulo modal-close">
-        <p class="close" id="closetri">X</p>
-        <h2>Área del Triangulo</h2>                    
-        <label for="">Ingrese la Base</label>
-        <br>
-        <input class="circulo-area-input" id="triangulo-base-input">
-        <br>
-        <label for="">Ingrese la Altura</label>
-        <br>
-        <input class="circulo-area-input" id="triangulo-altura-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-triangulo-area">Calcular</button>
-      </div>
+    <div class="cuadrado" id="">
+      <img src="../img/cuadrado.png">
+      <button id="area-cuadrado">Área</button>
+      <button>Perímetro</button>
     </div>
 
-    <!--Modal área cuadrado-->
-    <div id="cuadrado-modal" class="modal circulo-modal">
-      <div id="modal-cuadrado" class="modal-circulo modal-close">
-        <p class="close" id="closecua">X</p>
-        <h2>Área del cuadrado</h2>                    
-        <label for="">Ingrese el lado</label>
-        <br>
-        <input class="circulo-area-input" id="cuadrado-area-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-cuadrado-area">Calcular</button>
-      </div>
+    <div class="rectangulo" id="">
+      <img src="../img/rectangulo.png">
+      <button id="area-rectangulo">Área</button>
+      <button>Perímetro</button>
     </div>
+  </div>
 
-    <!--Modal área rectangulo-->
-    <div id="rectangulo-modal" class="modal circulo-modal">
-      <div id="modal-rectangulo" class="modal-circulo modal-close">
-        <p class="close" id="closerec">X</p>
-        <h2>Área del rectangulo</h2>                    
-        <label for="">Ingrese la base</label>
-        <br>
-        <input class="circulo-area-input" id="rectangulo-base-input">
-        <br>
-        <label for="">Ingrese la altura</label>
-        <br>
-        <input class="circulo-area-input" id="rectangulo-altura-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-rectangulo-area">Calcular</button>
-      </div>
+  <!--Modal área circulo-->
+  <div id="circulo-modal" class="modal circulo-modal">
+    <div id="modal-circulo" class="modal-circulo modal-close">
+      <p class="close" id="close">X</p>
+      <h2>Área del Circulo</h2>
+      <label for="">Ingrese el radio</label>
+      <br>
+      <input class="circulo-area-input" id="circulo-area-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-circulo-area">Calcular</button>
     </div>
+  </div>
+
+  <!--Modal área triangulo-->
+  <div id="triangulo-modal" class="modal circulo-modal">
+    <div id="modal-triangulo" class="modal-circulo modal-close">
+      <p class="close" id="closetri">X</p>
+      <h2>Área del Triangulo</h2>
+      <label for="">Ingrese la Base</label>
+      <br>
+      <input class="circulo-area-input" id="triangulo-base-input">
+      <br>
+      <label for="">Ingrese la Altura</label>
+      <br>
+      <input class="circulo-area-input" id="triangulo-altura-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-triangulo-area">Calcular</button>
+    </div>
+  </div>
+
+  <!--Modal área cuadrado-->
+  <div id="cuadrado-modal" class="modal circulo-modal">
+    <div id="modal-cuadrado" class="modal-circulo modal-close">
+      <p class="close" id="closecua">X</p>
+      <h2>Área del cuadrado</h2>
+      <label for="">Ingrese el lado</label>
+      <br>
+      <input class="circulo-area-input" id="cuadrado-area-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-cuadrado-area">Calcular</button>
+    </div>
+  </div>
+
+  <!--Modal área rectangulo-->
+  <div id="rectangulo-modal" class="modal circulo-modal">
+    <div id="modal-rectangulo" class="modal-circulo modal-close">
+      <p class="close" id="closerec">X</p>
+      <h2>Área del rectangulo</h2>
+      <label for="">Ingrese la base</label>
+      <br>
+      <input class="circulo-area-input" id="rectangulo-base-input">
+      <br>
+      <label for="">Ingrese la altura</label>
+      <br>
+      <input class="circulo-area-input" id="rectangulo-altura-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-rectangulo-area">Calcular</button>
+    </div>
+  </div>
 
 
-    <!--****************************************************************
+  <!--****************************************************************
     ********************************************************************
     ***********************     Perimetros    **************************
     ********************************************************************
     *******************************************************************-->
 
-        <!--Modal perimetro circulo-->
-    <div id="circulo-perimetro" class="modal circulo-modal">
-      <div id="perimetro-circulo" class="modal-circulo modal-close">
-        <p class="close" id="close">X</p>
-        <h2>Perímetro del Circulo</h2>                    
-        <label for="">Ingrese el radio</label>
-        <br>
-        <input class="circulo-area-input" id="circulo-perimetro-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-circulo-perimetro">Calcular</button>
-      </div>
+  <!--Modal perimetro circulo-->
+  <div id="circulo-perimetro" class="modal circulo-modal">
+    <div id="perimetro-circulo" class="modal-circulo modal-close">
+      <p class="close" id="close">X</p>
+      <h2>Perímetro del Circulo</h2>
+      <label for="">Ingrese el radio</label>
+      <br>
+      <input class="circulo-area-input" id="circulo-perimetro-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-circulo-perimetro">Calcular</button>
     </div>
+  </div>
 
-    <!--Modal Perímetro triangulo-->
-    <div id="triangulo-perimetro" class="modal circulo-modal">
-      <div id="perimetro-triangulo" class="modal-circulo modal-close">
-        <p class="close" id="closetri">X</p>
-        <h2>Perímetro del Triangulo</h2>                    
-        <label for="">Ingrese la lado</label>
-        <br>
-        <input class="circulo-area-input" id="triangulo-perimetro-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-triangulo-perimetro">Calcular</button>
-      </div>
+  <!--Modal Perímetro triangulo-->
+  <div id="triangulo-perimetro" class="modal circulo-modal">
+    <div id="perimetro-triangulo" class="modal-circulo modal-close">
+      <p class="close" id="closetri">X</p>
+      <h2>Perímetro del Triangulo</h2>
+      <label for="">Ingrese la lado</label>
+      <br>
+      <input class="circulo-area-input" id="triangulo-perimetro-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-triangulo-perimetro">Calcular</button>
     </div>
+  </div>
 
-    <!--Modal Perímetro cuadrado-->
-    <div id="cuadrado-perimetro" class="modal circulo-modal">
-      <div id="perimetro-cuadrado" class="modal-circulo modal-close">
-        <p class="close" id="closecua">X</p>
-        <h2>Perímetro del cuadrado</h2>                    
-        <label for="">Ingrese el lado</label>
-        <br>
-        <input class="circulo-area-input" id="cuadrado-perimetro-input">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-cuadrado-perimetro">Calcular</button>
-      </div>
+  <!--Modal Perímetro cuadrado-->
+  <div id="cuadrado-perimetro" class="modal circulo-modal">
+    <div id="perimetro-cuadrado" class="modal-circulo modal-close">
+      <p class="close" id="closecua">X</p>
+      <h2>Perímetro del cuadrado</h2>
+      <label for="">Ingrese el lado</label>
+      <br>
+      <input class="circulo-area-input" id="cuadrado-perimetro-input">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-cuadrado-perimetro">Calcular</button>
     </div>
+  </div>
 
-    <!--Modal Perímetro rectangulo-->
-    <div id="rectangulo-perimetro" class="modal circulo-modal">
-      <div id="perimetro-rectangulo" class="modal-circulo modal-close">
-        <p class="close" id="closerec">X</p>
-        <h2>Perímetro del rectangulo</h2>                    
-        <label for="">Ingrese la base</label>
-        <br>
-        <input class="circulo-area-input" id="rectangulo-base-input-perimetro">
-        <br>
-        <label for="">Ingrese la altura</label>
-        <br>
-        <input class="circulo-area-input" id="rectangulo-altura-input-perimetro">
-        <br>
-        <button class="calcular-circulo-area" id="calcular-rectangulo-perimetro">Calcular</button>
-      </div>
+  <!--Modal Perímetro rectangulo-->
+  <div id="rectangulo-perimetro" class="modal circulo-modal">
+    <div id="perimetro-rectangulo" class="modal-circulo modal-close">
+      <p class="close" id="closerec">X</p>
+      <h2>Perímetro del rectangulo</h2>
+      <label for="">Ingrese la base</label>
+      <br>
+      <input class="circulo-area-input" id="rectangulo-base-input-perimetro">
+      <br>
+      <label for="">Ingrese la altura</label>
+      <br>
+      <input class="circulo-area-input" id="rectangulo-altura-input-perimetro">
+      <br>
+      <button class="calcular-circulo-area" id="calcular-rectangulo-perimetro">Calcular</button>
     </div>
-    <script src="../js/num6.js"></script>
+  </div>
+  <script src="../js/num6.js"></script>
 
 </body>
+
 </html>

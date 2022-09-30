@@ -1,101 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" media="all" href="../css/style.css" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../js/num5.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructores</title>
+  <link rel="stylesheet" media="all" href="../css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="../js/num5.js"></script>
 </head>
+
 <body>
-    <a  href="../index.html"><h1>Taller N° 1</h1></a>
-    <h2>Resolución de problemas y manipulación del DOM con JavaScript</h2>
-   
-    <nav class="menu">
-      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-      <label class="menu-open-button" for="menu-open">
-        <span class="hamburger hamburger-1"></span>
-        <span class="hamburger hamburger-2"></span>
-        <span class="hamburger hamburger-3"></span>
-      </label>
-      
-      <a href="./num1.html" class="menu-item"> <i class='bx bx-sort-z-a'></i><!--palabra--> </a>
-      <a href="#" class="menu-item"> <i class='bx bxs-group'></i> <!--grupo--> </a>
-      <a href="#" class="menu-item"> <i class='bx bx-shape-triangle'></i><!--Trinagulo--> </a>
-      <a href="#" class="menu-item"> <i class='bx bx-shape-square'></i><!--Fuguras geo--> </a>
-      <a href="./num3.html" class="menu-item"> <i class='bx bxs-thermometer'></i><!--temp--> </a>
-      <a href="#" class="menu-item"> <i class='bx bx-blanket'></i> <!--for--></a>
-      
-    </nav>
-    
-    
-    <!-- filters -->
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="shadowed-goo">
-              
-              <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-              <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-              <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-              <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-              <feComposite in2="shadow" in="goo" result="goo" />
-              <feComposite in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-          <filter id="goo">
-              <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-              <feComposite in2="goo" in="SourceGraphic" result="mix" />
-          </filter>
-        </defs>
-    </svg>
+  <a href="../index.html">
+    <h1>Taller N° 1</h1>
+  </a>
+  <h2>Resolución de problemas y manipulación del DOM con JavaScript</h2>
 
-    <!----------------------Instructores------------------------->
-    <div class="Instructores">
-      <label for="">Nombre Instructor</label>
-      <select name="nombre" id="nombre">
-        <option value=""></option>
-        <option value="tatiana">Tatiana</option>
-        <option value="carolina">Carolina</option>
-        <option value="adriana">Adriana</option>
-        <option value="yaneth">Yaneth</option>
-        <option value="jhonathan">Jhonathan</option>
-        <option value="luis">Luis</option>
-        <option value="fernando">Fernando</option>
-      </select>
+  <nav class="menu">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+    <label class="menu-open-button" for="menu-open">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
 
-      <label for="">Apellido Instructor</label>
-      <select name="apellido" id="apellido">
-        <option value=""></option>
-        <option value="cabrera">Cabrera</option>
-        <option value="forero">Forero</option>
-        <option value="duarte">Duarte</option>
-        <option value="castillo">Castillo</option>
-        <option value="espitia">Espitia</option>
-        <option value="baquero">Baqueros</option>
-        <option value="galindo">Galindo</option>
-      </select>
+    <a href="./num1.html" class="menu-item"> <i class='bx bx-sort-z-a'></i><!--palabra--> </a>
+    <a href="./num5.html" class="menu-item"> <i class='bx bxs-group'></i> <!--grupo--> </a>
+    <a href="./num4.html" class="menu-item"> <i class='bx bx-shape-triangle'></i><!--Trinagulo--> </a>
+    <a href="./num6.html" class="menu-item"> <i class='bx bx-shape-square'></i><!--Fuguras geo--> </a>
+    <a href="./num3.html" class="menu-item"> <i class='bx bxs-thermometer'></i><!--temp--> </a>
+    <a href="./num7.html" class="menu-item"> <i class='bx bx-blanket'></i> <!--for--></a>
 
-      <label for="">Clase</label>
-      <select name="clase" id="clase">
-        <option value=""></option>
-        <option value="calidad">Calidad</option>
-        <option value="proyecto">Proyecto</option>
-        <option value="font-end">Front-End</option>
-        <option value="diseño">Diseño</option>
-        <option value="gestion">Gestion Ambiental</option>
-        <option value="php">PHP Avanzado</option>
-        <option value="cultura">Cultura Física</option>
-        <option value="bd">Base de Datos</option>
-        <option></option>
-      </select>
+  </nav>
 
-      <butt class="revisar" id="revisar">Revisar</butt>
-    </div>
 
-    <script src="../js/num5.js"></script>
+  <!-- filters -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+          result="shadow" />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feComposite in2="shadow" in="goo" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+  </svg>
+
+  <!----------------------Instructores------------------------->
+  <div class="Instructores">
+    <h2>Intructores</h2>
+    <label for="">Nombre Instructor</label>
+    <select name="nombre" id="nombre">
+      <option value=""></option>
+      <option value="tatiana">Tatiana</option>
+      <option value="carolina">Carolina</option>
+      <option value="adriana">Adriana</option>
+      <option value="yaneth">Yaneth</option>
+      <option value="jhonathan">Jhonathan</option>
+      <option value="luis">Luis</option>
+      <option value="fernando">Fernando</option>
+    </select>
+
+    <label for="">Apellido Instructor</label>
+    <select name="apellido" id="apellido">
+      <option value=""></option>
+      <option value="cabrera">Cabrera</option>
+      <option value="forero">Forero</option>
+      <option value="duarte">Duarte</option>
+      <option value="castillo">Castillo</option>
+      <option value="espitia">Espitia</option>
+      <option value="baquero">Baqueros</option>
+      <option value="galindo">Galindo</option>
+    </select>
+
+    <label for="">Clase</label>
+    <select name="clase" id="clase">
+      <option value=""></option>
+      <option value="calidad">Calidad</option>
+      <option value="proyecto">Proyecto</option>
+      <option value="font-end">Front-End</option>
+      <option value="diseño">Diseño</option>
+      <option value="gestion">Gestion Ambiental</option>
+      <option value="php">PHP Avanzado</option>
+      <option value="cultura">Cultura Física</option>
+      <option value="bd">Base de Datos</option>
+      <option></option>
+    </select>
+      <br>
+      <br>
+    <button class="revisar" id="revisar">Revisar</button>
+  </div>
+
+  <script src="../js/num5.js"></script>
 
 </body>
+
 </html>

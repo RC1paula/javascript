@@ -109,7 +109,8 @@ function cuaarea(){
 cuacalcular.addEventListener("click", cuaarea);
 
 /*-----------------------------------------------------------------*
-*                Modal rectangulo (area y perimetro)                  *
+*                Modal rectangulo (area)         
+                  *
 *------------------------------------------------------------------*/
 const recmodal = document.getElementById("modal-rectangulo");
 const recmodalc = document.getElementById("rectangulo-modal");
@@ -180,8 +181,8 @@ function recarea(){
     const baserec = parseFloat(document.getElementById("rectangulo-base-input").value);
     const alturarec = parseFloat(document.getElementById("rectangulo-altura-input").value);
 
-     calcular=baserec*alturarec;
-    alert(`El área del rectangulo es `+calcular.toFixed(2));
+    calcularperi=baserec*alturarec;
+    alert(`El área del rectangulo es `+calcularperi.toFixed(2));
 }
 
 reccalcular.addEventListener("click", recarea);

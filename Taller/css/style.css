@@ -309,8 +309,16 @@ body {
 *                        Triangulo                                 *
 *                                                                  *
 *------------------------------------------------------------------*/
-.triangulo{
-  margin-top: 80px;
+.triangulos{
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  justify-items: center;
+  width: 40%;
+  background: #9c0a0aab;
+  color: #fff;
+  margin: auto;
+  margin-top: 10%;
 }
 
 
@@ -320,7 +328,34 @@ body {
 *                                                                  *
 *------------------------------------------------------------------*/
 .Instructores{
+  font-family: 'Courier New';
+  width: 70%;
+  height: 130px;
+  border-radius: 7px;
+  margin: auto;
   margin-top: 100px;
+  background: #9c0a0a9c;
+  color: #fff;
+}
+.Instructores > select{
+  border-radius: 2px;
+  border: none;
+  padding: 0.5%;
+}
+.revisar{
+  font-family: 'Courier New';
+  background-color: #9c0a0a;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  padding: 1%;
+  transition: background-color .5s;
+
+}
+.revisar:hover{
+  background: #fafafa;
+  color: #9c0a0a;
+  border: 2px solid #9c0a0a;
 }
 
 /*-----------------------------------------------------------------*
