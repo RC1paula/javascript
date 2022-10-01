@@ -7,7 +7,7 @@ const cirabrir = document.getElementById("area-circulo");
 const circerrar = document.querySelectorAll(".close")[0]; 
 const areacir = parseFloat(document.getElementById("circulo-area-input").value);
 const circalcular = document.getElementById("calcular-circulo-area");
-
+ 
 function cirmostrar(c){
     c.preventDefault();
     cirmodalc.style.opacity = "1";
@@ -152,39 +152,71 @@ reccalcular.addEventListener("click", recarea);
 *******************************************************************/
 
 /*-----------------------------------------------------------------*
-*                Modal rectangulo (perimetro)                      *
+*                Modal circulo (perimetro)                      *
 *------------------------------------------------------------------*/
-const recperimetro = document.getElementById("perimetro-rectangulo");
-const recperimetroc = document.getElementById("rectangulo-perimetro");
-const reabrir = document.getElementById("area-rectangulo");
-const recerrar = document.getElementById("closerec"); 
-const recalcular = document.getElementById("calcular-rectangulo-area");
+// const cirmodal = document.getElementById("modal-circulo");
+// const cirmodalc = document.getElementById("circulo-modal");
+// const cirabrir = document.getElementById("area-circulo");
+// const circerrar = document.querySelectorAll(".close")[0]; 
+// const areacir = parseFloat(document.getElementById("circulo-area-input").value);
+// const circalcular = document.getElementById("calcular-circulo-area");
+
+// function cirmostrar(c){
+//     c.preventDefault();
+//     cirmodalc.style.opacity = "1";
+//     cirmodalc.style.visibility = "visible";
+//     cirmodal.classList.toggle("modal-close");
+// }
+
+// cirabrir.addEventListener('click', cirmostrar)
+
+// circerrar.addEventListener("click", function(){
+//     cirmodal.classList.toggle("modal-close");
+//     setTimeout(function(){
+//         cirmodalc.style.opacity = "0";
+//         cirmodalc.style.visibility = "hidden";
+//     },1000)
+// })
+
+// function cirarea(){
+//     const areacir = parseFloat(document.getElementById("circulo-area-input").value);
+//     calcular=3.14*(areacir^2);
+//     alert(`El área del circulo es `+calcular.toFixed(2));
+// }
+
+// circalcular.addEventListener("click", cirarea);
+
+const cirperimetro = document.getElementById("perimetro-circulo");
+const cirperimetroc = document.getElementById("circulo-perimetro");
+const ciabrir = document.getElementById("area-cirtangulo");
+const cirerrar = document.getElementById("closecir"); 
+const ciralcular = document.getElementById("calcular-cirtangulo-area");
 
 let remostrar = function(a){
     a.preventDefault();
-    recperimetroc.style.opacity = "1";
-    recperimetroc.style.visibility = "visible";
-    recperimetro.classList.toggle("modal-close");
+    cirperimetroc.style.opacity = "1";
+    cirperimetroc.style.visibility = "visible";
+    cirperimetro.classList.toggle("modal-close");
 }
 
 reabrir.addEventListener("click", remostrar)
 
-recerrar.addEventListener("click", function(){
-    recperimetro.classList.toggle("modal-close");
+cirerrar.addEventListener("click", function(){
+    cirperimetro.classList.toggle("modal-close");
     setTimeout(function(){
-        recperimetroc.style.opacity = "0";
-        recperimetroc.style.visibility = "hidden";
+        cirperimetroc.style.opacity = "0";
+        cirperimetroc.style.visibility = "hidden";
     },2000)
 })
 
-function recarea(){
-    const baserec = parseFloat(document.getElementById("rectangulo-base-input").value);
-    const alturarec = parseFloat(document.getElementById("rectangulo-altura-input").value);
+function cirarea(){
+    const basecir = parseFloat(document.getElementById("cirtangulo-base-input").value);
+    const alturacir = parseFloat(document.getElementById("cirtangulo-altura-input").value);
 
-    calcularperi=baserec*alturarec;
-    alert(`El área del rectangulo es `+calcularperi.toFixed(2));
+    calcularperi=basecir*alturacir;
+    alert(`El área del cirtangulo es `+calcularperi.toFixed(2));
 }
 
-reccalcular.addEventListener("click", recarea);
+circalcular.addEventListener("click", cirarea);
 
 

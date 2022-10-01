@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" media="all" href="../css/style.css" />
+
 </head>
 <body>
     <a  href="../index.html"><h1>Taller N° 1</h1></a>
@@ -49,6 +52,165 @@
         </defs>
     </svg>
 
+
+    <!--Formulario-->
+    <div id="Asesoria">
+      <h1>Formulario Validación</h1>
+   <form  th:action="@{/cliente/add}" th:objects="${cliente}" method="post" class="formulario" id="formulario">
+       <!--Nombre-->
+       <div class="formulario-grupo"  id="nomCliente">
+           <label for="nomCliente" class="formulario-label">Nombre</label>
+           <div class="formulario-input-grupo">
+               <input type="text" class="formulario-input" id="nomCliente" name="nomCliente" placeholder="Ej: Martín" th:field="*{nom_Cliente}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">El nombre tiene que ser de 4 a 10 letras, no puede contener números ni caracteres especiales.</p>
+       </div>
+
+       <!--Apellido-->
+       <div class="formulario-grupo"  id="apeCliente">
+           <label for="apeCliente" class="formulario-label">Apellido</label>
+           <div class="formulario-input-grupo">
+               <input type="text" class="formulario-input" id="apeCliente" name="apeCliente" placeholder="Ej: Torres" th:field="*{ape_Cliente}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">El apellido tiene que ser de 4 a 10 letras, no puede contener números ni caracteres especiales.</p>
+       </div>
+
+       <!--Tipo Documento-->
+       <div class="formulario-grupo"  id="tipoDoc">
+           <label for="tipoDoc" class="formulario-label">Tipo de Documento</label>
+           <div class="formulario-input-grupo">
+               <select class="opciones" th:field="*{tipoDoc}">
+                   <option>C.C</option>
+                   <option>C.E</option>
+                   <option>Otro</option>
+               </select>
+           </div>
+       </div>
+
+       <!--Número Documento-->
+       <div class="formulario-grupo" id="numDoc">
+           <label for="numDoc" class="formulario-label" >N° de Documento</label>
+           <div class="formulario-input-grupo">
+               <input type="number" class="formulario-input" id="numDoc" name="numDoc" placeholder="Ej: 1544896853" th:field="*{num_Doc}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">Contiene 9 a 10 números</p>
+       </div>
+
+       <!--Correo-->
+       <div class="formulario-grupo" id="correoCliente">
+           <label for="correoCliente" class="formulario-label" >E-mail</label>
+           <div class="formulario-input-grupo">
+               <input type="email" class="formulario-input" id="correoCliente" name="correoCliente" placeholder="Ej: correo@correo.com" th:field="*{correo_Cliente}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">El correo solo puede contener letras, números, puntos, guíones y guíon bajo.</p>
+       </div>
+
+               <!--Número Documento-->
+               <div class="formulario-grupo" id="contraseña">
+                   <label for="contraseña" class="formulario-label" >Contraseña</label>
+                   <div class="formulario-input-grupo">
+                       <input type="password" class="formulario-input" id="contraseña" name="contraseña" placeholder="Ej: 1544896853" th:field="*{num_Doc}">
+                       <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+                   </div>
+                   <p class="formulario-input-error">Contiene 9 a 10 números</p>
+               </div>
+
+                       <!--Número Documento-->
+       <div class="formulario-grupo" id="contraseña">
+           <label for="contraseña" class="formulario-label" >Nuevamente Contraseña</label>
+           <div class="formulario-input-grupo">
+               <input type="password" class="formulario-input" id="contraseña" name="contraseña" placeholder="Ej: 1544896853" th:field="*{num_Doc}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">Contiene 9 a 10 números</p>
+       </div>
+
+       <!-- Número de Teléfono
+       <div class="formulario-grupo" id="numCliente">
+           <label for="numCliente" class="formulario-label" >N° Teléfonico</label>
+           <div class="formulario-input-grupo">
+               <input type="number" class="formulario-input" id="numCliente" name="numCliente" placeholder="Ej: 3157668845" th:field="*{num_Cliente}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">El telefono solo puede contener números y el maximo son 10 dígitos.</p>
+       </div>
+-->
+       <!-- Dirección
+       <div class="formulario-grupo"  id="direccion">
+           <label for="direccion" class="formulario-label">Dirección</label>
+           <div class="formulario-input-grupo">
+               <input type="text" class="formulario-input" id="direccion" name="direccion" placeholder="Ej: Cra 145 #142C-51" th:field="*{direccion}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">La dirección no puede contener caracteres especiales</p>
+       </div>
+
+       <div class="formulario-grupo"  id="direccion">
+           <label for="direccion" class="formulario-label">Detalle Dirección </label>
+           <div class="formulario-input-grupo">
+               <input type="text" class="formulario-input" id="direccion" name="direccion" placeholder="Ej: Casa 31 th:field="*{direccion}">
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">La dirección no puede contener caracteres especiales</p>
+       </div> -->
+
+    <form>   
+       <!--Fecha a Agendar-->
+       <div class="formulario-grupo" id="fechaAgendar">
+           <label for="fechaAgendar" class="formulario-label" >Fecha de nacimiento </label>
+           <div class="formulario-input-grupo">
+               <input type="date" class="formulario-input" id="fechaAgendar" name="fechaAgendar" >
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+       </div>
+
+       <!-- Tipo de Asesoria
+       <div class="formulario-grupo" id="tipoAsesoria">
+           <label for="tipoAsesoria" class="formulario-label" >Tipo de Asesoria</label>
+           <div class="formulario-input-grupo">
+               <select class="opciones">
+                   <option>Presencial</option>
+                   <option>Virtual</option>
+               </select>
+           </div>
+       </div> -->
+
+       <!-- Descripción
+       <div class="formulario-grupo" id="formulario-grupo">
+           <label for="descripcion" class="formulario-label" id="descripcion">Descripción</label>
+           <div class="formulario-input-grupo">
+               <textarea type="text" class="formulario-input" id="descripcion" name="descripcion" ></textarea>
+               <i class="formulario-validacion-estado fa-regular fa-circle-xmark"></i>
+           </div>
+           <p class="formulario-input-error">No puede obtener caracteres especiales.</p>
+       </div> -->
+
+       <!--Terminos y Condiciones-->
+       <div clas="formulario-grupo" id="grupo-terminos">
+           <label class="formulario-label">
+               <input class="formulario-terminos" type="checkbox" name="terminos" id="terminos">
+               Terminos y Condiciones 
+           </label>
+       </div>
+
+       <div class="formulario-mensaje" id="formulario-mensaje">
+           <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error</b> por favor revise que el formulario este diligenciado correctamente.  </p>
+       </div>
+
+       <div class="formulario-grupo enviar-btn">
+           <button type="submit" id="submit" class="formulario-btn">Enviar</button>
+           <p class="formulario-mensaje-correcto" id="formulario-mensaje-correcto"> La solicitud de asesoramiento se envio exitosamente</p>
+       </div>
+   </form>
+  </form>      
+  </div>
+
+  <script src="../js/num7.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
