@@ -1,11 +1,10 @@
 /*-----------------------------------------------------------------*
-*                     Modal circulo (area)                         *
+*                     modal circulo (area)                         *
 *------------------------------------------------------------------*/
 const cirmodal = document.getElementById("modal-circulo");
 const cirmodalc = document.getElementById("circulo-modal");
 const cirabrir = document.getElementById("area-circulo");
 const circerrar = document.querySelectorAll(".close")[0]; 
-const areacir = parseFloat(document.getElementById("circulo-area-input").value);
 const circalcular = document.getElementById("calcular-circulo-area");
  
 function cirmostrar(c){
@@ -108,13 +107,14 @@ function cuaarea(){
 
 cuacalcular.addEventListener("click", cuaarea);
 
+
+
 /*-----------------------------------------------------------------*
-*                Modal rectangulo (area)         
-                  *
+*                Modal rectangulo (area)                           *
 *------------------------------------------------------------------*/
 const recmodal = document.getElementById("modal-rectangulo");
 const recmodalc = document.getElementById("rectangulo-modal");
-const recabrir = document.getElementById("area-rectangulo");
+const reccabrir = document.getElementById("area-rectangulo");
 const reccerrar = document.getElementById("closerec"); 
 const reccalcular = document.getElementById("calcular-rectangulo-area");
 
@@ -125,7 +125,7 @@ let recmostrar = function(a){
     recmodal.classList.toggle("modal-close");
 }
 
-recabrir.addEventListener("click", recmostrar)
+reccabrir.addEventListener("click", recmostrar)
 
 reccerrar.addEventListener("click", function(){
     recmodal.classList.toggle("modal-close");
@@ -145,61 +145,32 @@ function recarea(){
 
 reccalcular.addEventListener("click", recarea);
 
+
+
 /*******************************************************************
 ********************************************************************
-***********************     Perimetros    **************************
+**********************       Perimetros       **********************    
 ********************************************************************
 *******************************************************************/
 
 /*-----------------------------------------------------------------*
 *                Modal circulo (perimetro)                      *
 *------------------------------------------------------------------*/
-// const cirmodal = document.getElementById("modal-circulo");
-// const cirmodalc = document.getElementById("circulo-modal");
-// const cirabrir = document.getElementById("area-circulo");
-// const circerrar = document.querySelectorAll(".close")[0]; 
-// const areacir = parseFloat(document.getElementById("circulo-area-input").value);
-// const circalcular = document.getElementById("calcular-circulo-area");
 
-// function cirmostrar(c){
-//     c.preventDefault();
-//     cirmodalc.style.opacity = "1";
-//     cirmodalc.style.visibility = "visible";
-//     cirmodal.classList.toggle("modal-close");
-// }
+const cirperimetro = document.getElementById("circulo-perimetro");
+const cirperimetroc = document.getElementById("perimetro-circulo");
+const ciabrir = document.getElementById("perimetro-circulo-boton");
+const cirerrar = document.getElementById("circlose"); 
+const ciralcular = document.getElementById("calcular-perimetro-circulo");
 
-// cirabrir.addEventListener('click', cirmostrar)
-
-// circerrar.addEventListener("click", function(){
-//     cirmodal.classList.toggle("modal-close");
-//     setTimeout(function(){
-//         cirmodalc.style.opacity = "0";
-//         cirmodalc.style.visibility = "hidden";
-//     },1000)
-// })
-
-// function cirarea(){
-//     const areacir = parseFloat(document.getElementById("circulo-area-input").value);
-//     calcular=3.14*(areacir^2);
-//     alert(`El área del circulo es `+calcular.toFixed(2));
-// }
-
-// circalcular.addEventListener("click", cirarea);
-
-const cirperimetro = document.getElementById("perimetro-circulo");
-const cirperimetroc = document.getElementById("circulo-perimetro");
-const ciabrir = document.getElementById("area-cirtangulo");
-const cirerrar = document.getElementById("closecir"); 
-const ciralcular = document.getElementById("calcular-cirtangulo-area");
-
-let remostrar = function(a){
-    a.preventDefault();
+let mostrarcir = function(ci){
+    ci.preventDefault();
     cirperimetroc.style.opacity = "1";
     cirperimetroc.style.visibility = "visible";
     cirperimetro.classList.toggle("modal-close");
 }
 
-reabrir.addEventListener("click", remostrar)
+ciabrir.addEventListener("click", mostrarcir);
 
 cirerrar.addEventListener("click", function(){
     cirperimetro.classList.toggle("modal-close");
@@ -209,14 +180,126 @@ cirerrar.addEventListener("click", function(){
     },2000)
 })
 
-function cirarea(){
-    const basecir = parseFloat(document.getElementById("cirtangulo-base-input").value);
-    const alturacir = parseFloat(document.getElementById("cirtangulo-altura-input").value);
+function perimetrocri(){
+    const perimetrocir = parseFloat(document.getElementById("circulo-perimetro-input").value);
 
-    calcularperi=basecir*alturacir;
-    alert(`El área del cirtangulo es `+calcularperi.toFixed(2));
+    calcularperi=2*3,14*perimetrocir;
+    alert(`El perimetro del circulo es `+calcularperi.toFixed(2));
 }
 
-circalcular.addEventListener("click", cirarea);
+ciralcular.addEventListener("click", perimetrocri);
+
+
+
+/*-----------------------------------------------------------------*
+*                Modal triangulo (perimetro)                      *
+*------------------------------------------------------------------*/
+
+const triperimetro = document.getElementById("triangulo-perimetro");
+const triperimetroc = document.getElementById("perimetro-triangulo");
+const trabrir = document.getElementById("perimetro-triangulo-boton");
+const trcerrar = document.getElementById("triclose"); 
+const trcalcular = document.getElementById("calcular-perimetro-triangulo");
+
+let trmostrar = function(tri){
+    tri.preventDefault();
+    triperimetroc.style.opacity = "1";
+    triperimetroc.style.visibility = "visible";
+    triperimetro.classList.toggle("modal-close");
+}
+
+trabrir.addEventListener("click", trmostrar);
+
+trcerrar.addEventListener("click", function(){
+    triperimetro.classList.toggle("perimetro-close");
+    setTimeout(function(){
+        triperimetroc.style.opacity = "0";
+        triperimetroc.style.visibility = "hidden";
+    },1000)
+})
+
+function perimetrotri(){
+    const ladoperimetro = parseFloat(document.getElementById("triangulo-perimetro-input").value);
+
+     tricalcularperimetro=ladoperimetro*3;
+    alert(`El perimetro del triangulo es `+tricalcularperimetro.toFixed(2));
+}
+
+trcalcular.addEventListener("click", perimetrotri);
+
+
+
+/*-----------------------------------------------------------------*
+*                  Modal cuadrado (perimetro)                      *
+*------------------------------------------------------------------*/
+const cuaperimetro = document.getElementById("cuadrado-perimetro");
+const cuaperimetroc = document.getElementById("perimetro-cuadrado");
+const cuabrir = document.getElementById("perimetro-cuadrado-boton");
+const cucerrar = document.getElementById("cuaclose"); 
+const cucalcular = document.getElementById("calcular-perimetro-cuadrado");
+
+let mostarcua = function(cu){
+    cu.preventDefault();
+    cuaperimetroc.style.opacity = "1";
+    cuaperimetroc.style.visibility = "visible";
+    cuaperimetro.classList.toggle("modal-close");
+}
+
+cuabrir.addEventListener("click", mostarcua)
+
+cucerrar.addEventListener("click", function(){
+    cuaperimetro.classList.toggle("modal-close");
+    setTimeout(function(){
+        cuaperimetroc.style.opacity = "0";
+        cuaperimetroc.style.visibility = "hidden";
+    },2000)
+})
+
+function perimetrocua(){
+    const cuadradolado = parseFloat(document.getElementById("cuadrado-perimetro-input").value);
+
+    calcuaperi=cuadradolado*4;
+    alert(`El área del cuadrado es `+calcuaperi.toFixed(2));
+}
+
+cucalcular.addEventListener("click", perimetrocua);
+
+
+
+/*-----------------------------------------------------------------*
+*                Modal rectangulo (perimetro)                           *
+*------------------------------------------------------------------*/
+const recperimetro = document.getElementById("rectangulo-perimetro");
+const recperimetroc = document.getElementById("perimetro-rectangulo");
+const recabrir = document.getElementById("perimetro-rectangulo-boton");
+const recerrar = document.getElementById("recclose"); 
+const recalcular = document.getElementById("calcular-perimetro-rectangulo");
+
+let mostrarrec = function(re){
+    re.preventDefault();
+    recperimetroc.style.opacity = "1";
+    recperimetroc.style.visibility = "visible";
+    recperimetro.classList.toggle("modal-close");
+}
+
+recabrir.addEventListener("click", mostrarrec)
+
+recerrar.addEventListener("click", function(){
+    recperimetro.classList.toggle("modal-close");
+    setTimeout(function(){
+        recperimetroc.style.opacity = "0";
+        recperimetroc.style.visibility = "hidden";
+    },2000)
+})
+
+function perimetrorec(){
+    const baserec = parseFloat(document.getElementById("rectangulo-base-perimetro-input").value);
+    const alturarec = parseFloat(document.getElementById("rectangulo-altura-perimetro-input").value);
+
+     calperirec=(baserec*2)+(alturarec*2);
+    alert(`El área del rectangulo es `+calperirec.toFixed(2));
+}
+
+recalcular.addEventListener("click", perimetrorec);
 
 

@@ -73,26 +73,26 @@
   <div class="figuras">
     <div class="circulo">
       <img src="../img/circulo.png">
-      <button href="#" class="area-circulo" id="area-circulo">Área</button>
-      <button>Perímetro</button>
+      <button id="area-circulo">Área</button>
+      <button id="perimetro-circulo-boton">Perímetro</button>
     </div>
 
     <div class="triangulo" id="">
       <img src="../img/triangulo.png">
-      <button href="#" class="area-circulo" id="area-triangulo">Área</button>
-      <button>Perímetro</button>
+      <button id="area-triangulo">Área</button>
+      <button id="perimetro-triangulo-boton">Perímetro</button>
     </div>
 
     <div class="cuadrado" id="">
       <img src="../img/cuadrado.png">
       <button id="area-cuadrado">Área</button>
-      <button>Perímetro</button>
+      <button id="perimetro-cuadrado-boton">Perímetro</button>
     </div>
 
     <div class="rectangulo" id="">
       <img src="../img/rectangulo.png">
       <button id="area-rectangulo">Área</button>
-      <button>Perímetro</button>
+      <button id="perimetro-rectangulo-boton">Perímetro</button>
     </div>
   </div>
 
@@ -162,73 +162,60 @@
     ***********************     Perimetros    **************************
     ********************************************************************
     *******************************************************************-->
-
-  <!-- Modal área circulo
-  <div id="circulo-modal" class="modal circulo-modal">
-    <div id="modal-circulo" class="modal-circulo modal-close">
-      <p class="close" id="close">X</p>
-      <h2>Área del Circulo</h2>
-      <label for="">Ingrese el radio</label>
-      <br>
-      <input class="circulo-area-input" id="circulo-area-input">
-      <br>
-      <button class="calcular-circulo-area" id="calcular-circulo-area">Calcular</button>
-    </div>
-  </div> -->
   
   <!--Modal perimetro circulo-->
-  <div id="circulo-perimetro" class="modal circulo-modal">
-    <div id="perimetro-circulo" class="modal-circulo modal-close">
-      <p class="close" id="close">X</p>
-      <h2>Perímetro del Circulo</h2>
-      <label for="">Ingrese el radio</label>
+  <div id="perimetro-circulo" class="modal circulo-modal">
+    <div id="circulo-perimetro" class="modal-circulo modal-close">
+      <p class="close" id="circlose">X</p>
+      <h2>Perímetro del Círculo</h2>
+      <label>Ingrese el radio</label>
       <br>
       <input class="circulo-area-input" id="circulo-perimetro-input">
       <br>
-      <button class="calcular-circulo-area" id="calcular-circulo-perimetro">Calcular</button>
+      <button class="calcular-circulo-area" id="calcular-perimetro-circulo">Calcular</button>
     </div>
   </div>
 
   <!--Modal Perímetro triangulo-->
-  <div id="triangulo-perimetro" class="modal circulo-modal">
-    <div id="perimetro-triangulo" class="modal-circulo modal-close">
-      <p class="close" id="closetri">X</p>
+  <div id="perimetro-triangulo" class="modal circulo-modal">
+    <div id="triangulo-perimetro" class="modal-circulo modal-close">
+      <p class="close" id="triclose">X</p>
       <h2>Perímetro del Triangulo</h2>
-      <label for="">Ingrese la lado</label>
+      <label for="">Ingrese el lado</label>
       <br>
       <input class="circulo-area-input" id="triangulo-perimetro-input">
       <br>
-      <button class="calcular-circulo-area" id="calcular-triangulo-perimetro">Calcular</button>
+      <button class="calcular-circulo-area" id="calcular-perimetro-triangulo">Calcular</button>
     </div>
   </div>
 
   <!--Modal Perímetro cuadrado-->
-  <div id="cuadrado-perimetro" class="modal circulo-modal">
-    <div id="perimetro-cuadrado" class="modal-circulo modal-close">
-      <p class="close" id="closecua">X</p>
+  <div id="perimetro-cuadrado" class="modal circulo-modal">
+    <div id="cuadrado-perimetro" class="modal-circulo modal-close">
+      <p class="close" id="cuaclose">X</p>
       <h2>Perímetro del cuadrado</h2>
       <label for="">Ingrese el lado</label>
       <br>
       <input class="circulo-area-input" id="cuadrado-perimetro-input">
       <br>
-      <button class="calcular-circulo-area" id="calcular-cuadrado-perimetro">Calcular</button>
+      <button class="calcular-circulo-area" id="calcular-perimetro-cuadrado">Calcular</button>
     </div>
   </div>
 
   <!--Modal Perímetro rectangulo-->
-  <div id="rectangulo-perimetro" class="modal circulo-modal">
-    <div id="perimetro-rectangulo" class="modal-circulo modal-close">
-      <p class="close" id="closerec">X</p>
+  <div id="perimetro-rectangulo" class="modal circulo-modal">
+    <div id="rectangulo-perimetro" class="modal-circulo modal-close">
+      <p class="close" id="recclose">X</p>
       <h2>Perímetro del rectangulo</h2>
       <label for="">Ingrese la base</label>
       <br>
-      <input class="circulo-area-input" id="rectangulo-base-input-perimetro">
+      <input class="circulo-area-input" id="rectangulo-base-perimetro-input">
       <br>
       <label for="">Ingrese la altura</label>
       <br>
-      <input class="circulo-area-input" id="rectangulo-altura-input-perimetro">
+      <input class="circulo-area-input" id="rectangulo-altura-perimetro-input">
       <br>
-      <button class="calcular-circulo-area" id="calcular-rectangulo-perimetro">Calcular</button>
+      <button class="calcular-circulo-area" id="calcular-perimetro-rectangulo">Calcular</button>
     </div>
   </div>
   <script src="../js/num6.js"></script>
